@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sandbox.nowpayments.io/v1/currencies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - 1234567-ABCDEFG-HIJKLMN-OPQRSTU
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 19 Mar 2021 18:20:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '242'
+      Connection:
+      - keep-alive
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      - max-age=15768000
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: '{"currencies":["btg","eth","xmr","btc","zec","xvg","ada","ltc","bch","dash","xlm","xrp","dgb","doge","trx","kmd","bat","eos","waves","tusd","zen","grs","fun","gas","pax","rvn","bnbmainnet","bcd","usdterc20","cro","wabi","busd","stpt","usdc"]}'
+  recorded_at: Fri, 19 Mar 2021 18:20:20 GMT
+recorded_with: VCR 6.0.0

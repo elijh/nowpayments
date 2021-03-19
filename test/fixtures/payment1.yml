@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.sandbox.nowpayments.io/v1/payment
+    body:
+      encoding: UTF-8
+      string: '{"price_amount":1000,"price_currency":"usd","pay_currency":"btc"}'
+    headers:
+      X-Api-Key:
+      - 1234567-ABCDEFG-HIJKLMN-OPQRSTU
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 19 Mar 2021 20:23:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '372'
+      Connection:
+      - keep-alive
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      - max-age=15768000
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: '{"payment_id":"5231857091","payment_status":"waiting","pay_address":"sandBox_btc_address","price_amount":1000,"price_currency":"usd","pay_amount":0.01682986,"pay_currency":"btc","order_id":null,"order_description":null,"payin_extra_id":null,"ipn_callback_url":null,"created_at":"2021-03-19T20:23:11.152Z","updated_at":"2021-03-19T20:23:11.152Z","purchase_id":"4747543426"}'
+  recorded_at: Fri, 19 Mar 2021 20:23:10 GMT
+recorded_with: VCR 6.0.0
